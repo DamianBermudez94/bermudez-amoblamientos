@@ -1,0 +1,507 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  background: url("./indoor/img-indoor/imagenes-indoor/IMG-20210325-WA0018.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+/** Go top 
+.go-top {
+  position: fixed;
+  bottom: 0px;
+  right: -100%;
+  width: 50px;
+  height: 50px;
+
+  background: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+.go-top:hover {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: rgb(71, 71, 71);
+}
+.go-top:hover span {
+  color: #fff;
+}
+.go-top > span {
+  font-size: 25px;
+  color: #000;
+}*/
+
+/** Diseño del Welcome**/
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.589);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome__title {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px;
+}
+
+.welcome hr {
+  width: 250px;
+  margin-left: auto;
+  height: 3px;
+  background: #fff;
+}
+.welcome__sub-title {
+  font-size: 22px;
+  margin: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+
+  text-align: center;
+}
+
+/** Fin del style**/
+
+/*****Diseño del slider****/
+.section-slider{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+.flexslider {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.slider {
+  display: flex;
+  width: 300%;
+  height: 200px;
+  margin-left: -100%;
+}
+
+.slider-section {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-img {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/********* Seccion sobre nosotros ****/
+.container-tip {
+  height: 350px;
+  margin: 0;
+  padding: 25px;
+  background-color: #fff;
+}
+.title-somos-nosotros {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+hr {
+  width: 25%;
+  height: 5px;
+  background: #000;
+  margin-left: 125px;
+  margin: auto;
+}
+.title-parrafo {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 24px;
+  color: #151515;
+}
+.enlaces {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-enlaces {
+  padding: 10px;
+  margin: auto;
+  text-decoration: none;
+  border: 1px dashed #000;
+  position: relative;
+  top: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: #212121;
+  background: #999999;
+}
+.btn-enlaces:hover {
+  background: #212121;
+  color: #fff;
+}
+
+/** seccion Animacion Editor
+  
+  .container-editor {
+    margin-top: 50px;
+  }
+  .editor__item {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .editor-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .editor-circle {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -300px;
+    right: -200px;
+    color: #000;
+    padding: 15px;
+    padding-bottom: px;
+    padding-right: 55px;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .editor__item:hover .editor-circle {
+    transform: scale(1.2);
+    bottom: -20px;
+    right: -45px;
+    text-align: center;
+  }
+  .editor__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .editor__item:hover::before {
+    opacity: 1;
+  }  **/
+
+/** Seccion tips informaticos **/
+
+.container-tips {
+  height: 500px;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+.tip-title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tip i {
+  font-size: 24px;
+  padding: 20px 0;
+}
+.parrafo-tips {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+/** Estilo responsive para tablet **/
+
+@media screen and (min-width: 768px) {
+
+  .slider-img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+   
+  }
+  .container-tips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tip-icon {
+    font-size: 29px;
+  }
+  .tip-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .parrafo-tips {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /** Fin del header **/
+  .header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .header-img .welcome h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+
+    margin-bottom: 35px;
+  }
+  .header-img .welcome .linea-title {
+    width: 400px;
+    height: 5px;
+    background: #fff;
+    border: none;
+    margin-top: -15px;
+    text-align: center;
+  }
+  .header-img .welcome p {
+    width: 500px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  /** Fin del header **/
+
+  /*** Cuerpo de pa pagina****/
+
+  /****Sobre nosotros **/
+
+  .title-somosnosotros {
+    font-size: 45px;
+  }
+  hr {
+    width: 25%;
+    height: 5px;
+    background: #000;
+    margin-left: 350px;
+    margin: auto;
+  }
+  .title-parrafo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .enlaces {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-enlaces {
+    width: 10%;
+    height: 50%;
+    padding: 10px;
+    margin: auto 40px;
+    text-decoration: none;
+    border: 1px dashed #000;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: #212121;
+    background: #999999;
+  }
+  .btn-enlaces:hover {
+    background: #212121;
+    color: #fff;
+  }
+
+  /**** Seccion slider **/
+  .slider {
+    display: flex;
+    width: 300%;
+    height: 300px;
+    margin-left: -100%;
+    position: relative;
+  }
+
+ 
+
+  .slider-img {
+    width: 600px;
+    height: 400px;
+  
+   
+  }
+
+ 
+  /*
+   .btn-slider {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    font-weight: blod;
+    text-align: center;
+    cursor: pointer;
+    z-index: 99999;
+  }
+  .btn-slider:hover {
+    color: #f5f230;
+  }
+  .slider_btn-right {
+    right: 100px;
+  }
+  .slider_btn-left {
+    left: 100px;
+  }*/
+  
+  /***** Seccion Tips **/
+  .container-tips {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+  }
+
+  .tip-title {
+    padding-right: 26px;
+    font-weight: 400;
+  }
+  .tip {
+    padding: auto;
+    margin: 15px auto;
+  }
+  .tip i {
+    font-size: 29px;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .parrafo-tips {
+    font-size: 18px;
+    margin: 10px auto;
+  }
+
+  /******* Seccion Footer **/
+  .main-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .footer-link:hover {
+    color: #ccc;
+  }
+  .redes-footer {
+    font-size: 25px;
+    padding: 15px;
+    color: #555;
+    text-align: left;
+    transition: all 0.5s;
+  }
+  .redes-footer:hover {
+    color: #ccc;
+  }
+  .redes {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .copy {
+    grid-column-start: span 4;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-header {
+    position: relative;
+    width: 100%;
+  }
+  .main-header .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999999999;
+  }
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+  .main-header__container:nth-child(3) {
+    padding-left: 50px;
+  }
+
+
+  .slider-img {
+    width: 700px;
+    height: 400px;
+    
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main-header {
+    position: relative;
+    width: 100%;
+  }
+  .main-header .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+  }
+  .container {
+    width: 1400px;
+    margin: auto;
+  }
+  .main-header__container:nth-child(3) {
+    padding-left: 100px;
+  }
+}
